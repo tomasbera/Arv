@@ -1,6 +1,6 @@
-public class Cat extends Dog{
+public class Cat extends Dog {
 
-    public static boolean dogCat;
+    public static boolean dogCat = true;
 
     public static void main(String[] args) {
 
@@ -8,8 +8,7 @@ public class Cat extends Dog{
         if (dogCat) {
             dog.bark();
             dogCat = false;
+            System.out.println(dog.type);
         }
-
-        System.out.println(dog.type);
     }
 }
